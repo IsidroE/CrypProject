@@ -1,0 +1,13 @@
+C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicationClient\bin\Debug\BankAplicationClient.exe.config
+C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicationClient\bin\Debug\BankAplicationClient.exe
+C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicationClient\bin\Debug\BankAplicationClient.pdb
+C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicationClient\obj\Debug\BankAplicationClient.csprojResolveAssemblyReference.cache
+C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicationClient\obj\Debug\BankAplicationClient.GUI.VentanaPrincipal.resources
+C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicationClient\obj\Debug\BankAplicationClient.Properties.Resources.resources
+C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicationClient\obj\Debug\BankAplicationClient.csproj.GenerateResource.Cache
+C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicationClient\obj\Debug\BankAplicationClient.exe
+C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicationClient\obj\Debug\BankAplicationClient.pdb
+C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicationClient\obj\Debug\BankAplicationClient.GUI.VentanaCuentaAhorro.resources
+C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicationClient\obj\Debug\BankAplicationClient.GUI.VentanaCuentaCredito.resources
+C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicationClient\obj\Debug\BankAplicationClient.GUI.Login.resources
+C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicationClient\obj\Debug\BankAplicationClient.GUI.VentanaMovimientos.resources
