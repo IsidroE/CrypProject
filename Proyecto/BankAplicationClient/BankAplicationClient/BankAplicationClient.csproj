@@ -46,7 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\CifradoAES.cs" />
     <Compile Include="Control\Controlador.cs" />
+    <Compile Include="Control\Serializa.cs" />
     <Compile Include="Control\SocketCliente.cs" />
     <Compile Include="Control\StateObject.cs" />
     <Compile Include="GUI\Login.cs">
@@ -80,7 +82,8 @@
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="POJO\Cliente.cs" />
-    <Compile Include="POJO\Login.cs" />
+    <Compile Include="POJO\LoginPOJO.cs" />
+    <Compile Include="POJO\Operacion.cs" />
     <Compile Include="POJO\Transaccion.cs" />
     <Compile Include="POJO\TransferenciaExterna.cs" />
     <Compile Include="Program.cs" />

@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BankAplicationClient.POJO
 {
-    class TransferenciaExterna
+    [Serializable]
+    public class TransferenciaExterna
     {
         string nombres = null;
         string apellidoPaterno = null;
@@ -14,57 +11,73 @@ namespace BankAplicationClient.POJO
         int noCuenta = 0;
         int tipo = 0;
 
-        public string getNombres()
+        public TransferenciaExterna()
         {
-            return nombres;
         }
 
-        public void setNombres(string nombres)
+        public string Nombres
         {
-            this.nombres = nombres;
+            get
+            {
+                return nombres;
+            }
+
+            set
+            {
+                nombres = value;
+            }
         }
 
-        public string getApellidoPaterno()
+        public string ApellidoPaterno
         {
-            return apellidoPaterno;
+            get
+            {
+                return apellidoPaterno;
+            }
+
+            set
+            {
+                apellidoPaterno = value;
+            }
         }
 
-        public void setApellidoPaterno(string apellidoPaterno)
+        public string ApellidoMaterno
         {
-            this.apellidoPaterno = apellidoPaterno;
+            get
+            {
+                return apellidoMaterno;
+            }
+
+            set
+            {
+                apellidoMaterno = value;
+            }
         }
 
-        public string getApellidoMaterno()
+        public int NoCuenta
         {
-            return apellidoMaterno;
+            get
+            {
+                return noCuenta;
+            }
+
+            set
+            {
+                noCuenta = value;
+            }
         }
 
-        public void setApellidoMaterno(string apellidoMaterno)
+        public int Tipo
         {
-            this.apellidoMaterno = apellidoMaterno;
+            get
+            {
+                return tipo;
+            }
+
+            set
+            {
+                tipo = value;
+            }
         }
-
-        public int getNoCuenta()
-        {
-            return noCuenta;
-        }
-
-        public void setNoCuenta(int noCuenta)
-        {
-            this.noCuenta = noCuenta;
-        }
-
-
-        public int getTipo()
-        {
-            return noCuenta;
-        }
-
-        public void setTipo(int tipo)
-        {
-            this.tipo = tipo;
-        }
-
-
     }
 }

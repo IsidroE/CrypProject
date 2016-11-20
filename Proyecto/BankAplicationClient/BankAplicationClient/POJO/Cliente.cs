@@ -2,6 +2,7 @@
 
 namespace BankAplicationClient.POJO
 {
+    [Serializable]
     public class Cliente
     {
         int idCliente = 0;
@@ -16,79 +17,95 @@ namespace BankAplicationClient.POJO
         {
         }
 
-        public int getIdCliente()
+        public int IdCliente
         {
-            return idCliente;
+            get
+            {
+                return idCliente;
+            }
+
+            set
+            {
+                idCliente = value;
+            }
         }
 
-        public void setIdCliente(int idCliente)
+        public string Nombres
         {
-            this.idCliente = idCliente;
+            get
+            {
+                return nombres;
+            }
+
+            set
+            {
+                nombres = value;
+            }
         }
 
-        public string getNombres()
+        public string ApellidoPaterno
         {
-            return nombres;
+            get
+            {
+                return apellidoPaterno;
+            }
+
+            set
+            {
+                apellidoPaterno = value;
+            }
         }
 
-        public void setNombres(string nombres)
+        public string ApellidoMaterno
         {
-            this.nombres = nombres;
+            get
+            {
+                return apellidoMaterno;
+            }
+
+            set
+            {
+                apellidoMaterno = value;
+            }
         }
 
-        public string getApellidoPaterno()
+        public int NoCuenta
         {
-            return apellidoPaterno;
+            get
+            {
+                return noCuenta;
+            }
+
+            set
+            {
+                noCuenta = value;
+            }
         }
 
-        public void setApellidoPaterno(string apellidoPaterno)
+        public int NoCuentaCredito
         {
-            this.apellidoPaterno = apellidoPaterno;
+            get
+            {
+                return noCuentaCredito;
+            }
+
+            set
+            {
+                noCuentaCredito = value;
+            }
         }
 
-        public string getApellidoMaterno()
+        public string Contrasenia
         {
-            return apellidoMaterno;
-        }
+            get
+            {
+                return contrasenia;
+            }
 
-        public void setApellidoMaterno(string apellidoMaterno)
-        {
-            this.apellidoMaterno = apellidoMaterno;
-        }
-
-        public int getNoCuenta()
-        {
-            return noCuenta;
-        }
-
-        public void setNoCuenta(int noCuenta)
-        {
-            this.noCuenta = noCuenta;
-        }
-
-        public int getNoCuentaCredito()
-        {
-            return noCuentaCredito;
-        }
-
-        public void setNoCuentaCredito(int noCuentaCredito)
-        {
-            this.noCuentaCredito = noCuentaCredito;
-        }
-
-        public string getContrasenia()
-        {
-            return contrasenia;
-        }
-
-        public void setContrasenia(string contrasenia)
-        {
-            this.contrasenia = contrasenia;
-        }
-
-        public string toString()
-        {
-            return "Cliente{" + "idCliente=" + idCliente + ", nombres=" + nombres + ", apellidoPaterno=" + apellidoPaterno + ", apellidoMaterno=" + apellidoMaterno + ", noCuenta=" + noCuenta + ", noCuentaCredito=" + noCuentaCredito + ", contrasenia=" + contrasenia + '}';
+            set
+            {
+                contrasenia = value;
+            }
         }
 
     }

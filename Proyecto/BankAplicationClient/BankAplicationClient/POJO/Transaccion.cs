@@ -1,40 +1,41 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BankAplicationClient.POJO
 {
-    class Transaccion
+    [Serializable]
+    public class Transaccion
     {
         object objeto = null;
-        int tipo = 0 ;
+        int tipo = 0;
 
-        public object getObjeto()
+        public Transaccion()
         {
-            return objeto;
         }
 
-        public void setObjeto(object objeto)
+        public object Objeto
         {
-            this.objeto = objeto;
+            get
+            {
+                return objeto;
+            }
+
+            set
+            {
+                objeto = value;
+            }
         }
 
-        public int getTipo()
+        public int Tipo
         {
-            return tipo;
-        }
+            get
+            {
+                return tipo;
+            }
 
-        public void setTipo(int tipo)
-        {
-            this.tipo = tipo;
+            set
+            {
+                tipo = value;
+            }
         }
-
-        public String toString()
-        {
-            return "Cliente{" + "objeto=" + objeto + ", tipo=" + tipo + '}';
-        }
-
     }
 }

@@ -1,4 +1,5 @@
 ﻿using BankAplicationClient.Control;
+using BankAplicationClient.POJO;
 using System;
 using System.Windows.Forms;
 
@@ -17,10 +18,12 @@ namespace BankAplicationClient.GUI
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-
+            LoginPOJO log = new LoginPOJO();
             if (ValidaCampos())
             {
-                if (controlador.login(idCuenta, pasword))
+                log.IdCuenta = idCuenta;
+                log.Pasword = pasword;
+                if (controlador.login(log))
                 {
                     this.DialogResult = System.Windows.Forms.DialogResult.OK;
                 }

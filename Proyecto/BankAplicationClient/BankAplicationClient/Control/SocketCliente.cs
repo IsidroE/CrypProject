@@ -49,15 +49,15 @@ namespace BankAplicationClient.Control
             ClientSocket.Send(buffer, 0, buffer.Length, SocketFlags.None);
         }
 
-        public void Receive()
+        public string Receive()
         {
             var buffer = new byte[2048];
             int received = ClientSocket.Receive(buffer, SocketFlags.None);
-            if (received == 0) return;
+            if (received == 0) return null;
             var data = new byte[received];
             Array.Copy(buffer, data, received);
             string text = Encoding.ASCII.GetString(data);
-            Console.WriteLine(text);
+            return text;
         }
     }
 }

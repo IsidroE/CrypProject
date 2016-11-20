@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Servidor.POJO;
+using Servidor.Control;
+using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
@@ -91,7 +93,20 @@ namespace Servidor.Servidor
                 Console.WriteLine("Client disconnected");
                 return;
             }
-            byte[] data = Encoding.ASCII.GetBytes("Recibi tu peticion......");
+
+            
+            Transaccion transaccion = new Transaccion();
+            Serializa Serializa = new Serializa();
+            CifradoAES aes = new CifradoAES();
+
+            //Genera la transaccion a enviar
+            transaccion.Tipo = Operacion.EXITO;
+            //serializa la transaccion
+            string transaccionSerializada = Serializa.serializaTransaccion(transaccion);
+            //cifra la transaccion 
+            string transaccionSerializadaCifrada = aes.cifrar(transaccionSerializada);
+
+            byte[] data = Encoding.ASCII.GetBytes(transaccionSerializadaCifrada);
             current.Send(data);
             Console.WriteLine("Esperando cliente");
 

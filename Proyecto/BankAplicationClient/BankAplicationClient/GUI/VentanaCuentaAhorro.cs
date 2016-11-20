@@ -51,7 +51,7 @@ namespace BankAplicationClient.GUI
 
         private void btnConsultaSaldo_Click(object sender, EventArgs e)
         {
-            if(controlador.ConsultaSaldo())
+            if(controlador.ConsultaSaldo(Operacion.CONSULTA_AHORRO))
             {
                 MessageBox.Show("operacion exitosa!", "Correcto");
             }
@@ -64,10 +64,10 @@ namespace BankAplicationClient.GUI
         private void tabControl_Selecting(object sender, TabControlCancelEventArgs e)
         {
             Cliente c = controlador.getUsuario();
-            txtNombres.Text = c.getNombres();
-            txtApellidoPaterno.Text = c.getApellidoPaterno();
-            txtApellidoMaterno.Text = c.getApellidoMaterno();
-            txtNoCuenta.Text = c.getNoCuenta().ToString();
+            txtNombres.Text = c.Nombres;
+            txtApellidoPaterno.Text = c.ApellidoPaterno;
+            txtApellidoMaterno.Text = c.ApellidoMaterno;
+            txtNoCuenta.Text = c.NoCuenta.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -75,11 +75,11 @@ namespace BankAplicationClient.GUI
             if (ValidaTransferencia())
             {
                 TransferenciaExterna te = new TransferenciaExterna();
-                te.setNombres(txtNombreTransferir.Text);
-                te.setApellidoPaterno(txtPaternoTransferir.Text);
-                te.setApellidoMaterno(txtMaternoTransferir.Text);
-                te.setNoCuenta(Int32.Parse(txtMontoTransferir.Text));
-                te.setTipo(cbTranferir.SelectedIndex);
+                te.Nombres = (txtNombreTransferir.Text);
+                te.ApellidoPaterno = (txtPaternoTransferir.Text);
+                te.ApellidoMaterno = (txtMaternoTransferir.Text);
+                te.NoCuenta = (Int32.Parse(txtMontoTransferir.Text));
+                te.Tipo =(cbTranferir.SelectedIndex);
                 if (controlador.transferir(te))
                 {
                     MessageBox.Show("La trnasferencia fue exitosa", "Correcto");
