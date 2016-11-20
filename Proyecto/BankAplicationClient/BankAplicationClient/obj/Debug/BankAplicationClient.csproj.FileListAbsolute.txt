@@ -11,3 +11,6 @@ C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicatio
 C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicationClient\obj\Debug\BankAplicationClient.GUI.VentanaCuentaCredito.resources
 C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicationClient\obj\Debug\BankAplicationClient.GUI.Login.resources
 C:\Users\Isidro\Desktop\CripotografiaProyecto\BankAplicationClient\BankAplicationClient\obj\Debug\BankAplicationClient.GUI.VentanaMovimientos.resources
+C:\Users\Isidro\Documents\GitHub\CrypProject\Proyecto\BankAplicationClient\BankAplicationClient\bin\Debug\BankAplicationClient.exe.config
+C:\Users\Isidro\Documents\GitHub\CrypProject\Proyecto\BankAplicationClient\BankAplicationClient\obj\Debug\BankAplicationClient.exe
+C:\Users\Isidro\Documents\GitHub\CrypProject\Proyecto\BankAplicationClient\BankAplicationClient\obj\Debug\BankAplicationClient.pdb
