@@ -80,6 +80,7 @@
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="POJO\Cliente.cs" />
+    <Compile Include="POJO\Login.cs" />
     <Compile Include="POJO\Transaccion.cs" />
     <Compile Include="POJO\TransferenciaExterna.cs" />
     <Compile Include="Program.cs" />
