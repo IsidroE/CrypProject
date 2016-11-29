@@ -1,41 +1,26 @@
 ﻿using System;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Servidor.POJO
 {
     [Serializable]
     public class Transaccion
     {
-        object objeto = null;
-        int tipo = 0;
+        public byte[] objetoCifrado { get;  }
+        public int Tipo { get; set; }
 
         public Transaccion()
+        {}
+
+        public Transaccion( int tipo, object objetoClaro, int llave ) //Ya veremos la llave...
         {
-        }
+            BinaryFormatter bf = new BinaryFormatter();
+            MemoryStream ms = new MemoryStream();
+            bf.Serialize(ms, objetoClaro);
+            objetoCifrado = ms.ToArray();
 
-        public object Objeto
-        {
-            get
-            {
-                return objeto;
-            }
-
-            set
-            {
-                objeto = value;
-            }
-        }
-
-        public int Tipo
-        {
-            get
-            {
-                return tipo;
-            }
-
-            set
-            {
-                tipo = value;
-            }
+            this.Tipo = tipo;
         }
     }
 }
