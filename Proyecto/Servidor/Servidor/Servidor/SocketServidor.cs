@@ -97,14 +97,14 @@ namespace Servidor.Servidor
             
             Transaccion transaccion = new Transaccion();
             Serializa Serializa = new Serializa();
-            CifradoAES aes = new CifradoAES();
+            //CifradoAES aes = new CifradoAES();
 
             //Genera la transaccion a enviar
             transaccion.Tipo = Operacion.EXITO;
             //serializa la transaccion
             string transaccionSerializada = Serializa.serializaTransaccion(transaccion);
             //cifra la transaccion 
-            string transaccionSerializadaCifrada = aes.cifrar(transaccionSerializada);
+            string transaccionSerializadaCifrada = transaccionSerializada; //aes.cifrar(transaccionSerializada);
 
             byte[] data = Encoding.ASCII.GetBytes(transaccionSerializadaCifrada);
             current.Send(data);
